@@ -37,7 +37,8 @@ int main (void)
 
     printf ("Converted Number = ");
 
-    for (--index; index >= 0; --index) {
+    for (--index; index >= 0; --index) 
+    {
         nextDigit = convertedNumber[index];
         printf ("%c", baseDigits[nextDigit]);
     }
