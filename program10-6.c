@@ -26,5 +26,7 @@ int main(void)
   printf("%i ", i);
   printf("%i\n", n2.next->value);
 
+
   return 0;
+
 }
