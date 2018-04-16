@@ -1,0 +1,6 @@
+Enter a number between 1 and 100:  
+
+Your number is 512.00
+Half of it is 256.00
+Square it to get 262144.00
+Cube it to get 134217728.00
