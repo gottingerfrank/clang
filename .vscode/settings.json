@@ -1,4 +1,5 @@
 {
     "intellicodeCompletions.language.javascript": true,
-    "intellicodeCompletions.language.typescript": true
+    "intellicodeCompletions.language.typescript": true,
+    "C_Cpp.errorSquiggles": "Disabled"
 }

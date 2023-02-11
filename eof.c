@@ -2,18 +2,18 @@
 various symbolic constants and types in the
 C Programming Language - on the local machine */
 
-#include stdio.h
+#include <stdio.h>
 
 
-int my_int
-short my_short
-long my_long
-long long my_llong
-char my_char
-float my_float
-double my_double
-int *my_ipointer
-char *my_cpointer
+int my_int = 87;
+short my_short = 21;
+long my_long = 99999;
+long long my_llong = 999999999;
+char my_char = 'A';
+float my_float = 0.33;
+double my_double = 0.3333;
+int *my_ipointer = &my_int;
+char *my_cpointer = &my_char;
 
 int main() {
     printf("Symbolic constant EOF:\t%6d\n", EOF);
@@ -25,11 +25,14 @@ int main() {
     printf("Character - char:\t%6d Bytes\n", sizeof(my_char));
     printf("Float Pointer - float:\t%6d Bytes\n", sizeof(my_float));
     printf("Double Pointer - double:\t%6d Bytes\n", sizeof(my_double));
-    printf("Pointer to int - int*:\t6d Bytes\n", sizeof(my_ipointer))
-    printf("Pointer to char - char*:\t6d Bytes\n", sizeof(my_cpointer))
+    printf("Pointer to int - int*:\t%6d Bytes\n", sizeof(my_ipointer));
+    printf("Pointer to char - char*:\t%6d Bytes\n", sizeof(my_cpointer));
 
 
     printf("int Pointer - int *:\t%6p Bytes\n", sizeof(my_ipointer));
     printf("int Pointer - int *:\t%6p Bytes\n", sizeof(my_ipointer));
 
+    printf("------------------ Data Type Sizes: MACROS ------------------\n");
+    printf("int Size [__SIZEOF_INT__]:", __SIZEOF_INT__);
+    
 }
